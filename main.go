@@ -1,4 +1,4 @@
-package main
+package sudoku
 
 import "fmt"
 
@@ -102,19 +102,6 @@ func elim() {
 
 			b[i][j].num = c(b[i][j].candidates)
 		}
-	}
-}
-
-/*
- * 3x3のレンジ
- */
-func r(i int) []int {
-	if i >= 0 && i <= 2 {
-		return []int{0, 1, 2}
-	} else if i >= 3 && i <= 5 {
-		return []int{3, 4, 5}
-	} else {
-		return []int{6, 7, 8}
 	}
 }
 
